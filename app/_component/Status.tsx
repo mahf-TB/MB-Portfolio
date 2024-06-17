@@ -203,15 +203,15 @@ export const Status = () => {
             <div className="h-5" />
             <ContactCard
               mediumImg="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
-              image="image/mahefa.jpg"
-              name="Mahefa and Nasah"
+              image="image/mahefa.JPG"
+              name="Mahefa Bienvenu"
               description="Couple goal 2024"
             />
             <div className="h-5" />
             <ContactCard
               mediumImg="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png"
-              image="image/mahefa.jpg"
-              name="Tsilavirintsoa"
+              image="image/mahefa.JPG"
+              name="@mahefa.bien"
               description="Sur intagram"
             />
           </Card>
