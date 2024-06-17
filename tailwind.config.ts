@@ -19,12 +19,15 @@ const config = {
     },
     fontFamily: {
       sans: ["var(--font-geist-sans)"],
+      mono: ["var(--font-geist-mono)"],
       maven : ["var(--font-Maven)"],
       JetBrains : ["var(--font-JetBrainsMono)"],
       
     },
     extend: {
       colors: {
+        green4: "#00CF58",
+        green3: "#2F7638",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
