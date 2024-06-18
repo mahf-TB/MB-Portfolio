@@ -1,80 +1,63 @@
 import { Card } from "@/components/ui/card";
 import { Section } from "./Section";
+import { SideProject } from "./composant/SideProject";
+import { WorkProject } from "./composant/WorkProject";
+import { ContactCard } from "./composant/ContactCard";
 import {
-  ArrowUpRight,
   Code,
   GalleryThumbnails,
   HomeIcon,
-  LucideIcon,
   Rss,
+  SignpostIcon,
   StickerIcon,
 } from "lucide-react";
-import Link from "next/link";
 
-const SIDE_PROJECTES: sideProjectProps[] = [
+const SIDE_PROJECTES = [
   {
     Logo: HomeIcon,
-    title: "Mahefa Bienvenu",
-    description: "Developpeur FullStack",
+    title: "DÉVELOPPEUR FULLSTACK, STAGE",
+    description: "Développement d’une application d’optimisation de la gestion de l’évolution de carrière des agents en leur permettant de suivre leur changement de grade.",
+    url: "https://github.com/mahf-TB",
+  },
+  {
+    Logo: HomeIcon,
+    title: "DÉVELOPPEUR BACKEND - PROJET IHM",
+    description: "Réalisation d’une application de gestion de résidence universitaire. Stacks : Laravel 10, PHP, VueJs, MySql, Visual paradigm",
     url: "https://github.com/mahf-TB",
   },
   {
     Logo: Code,
-    title: "Mahefa Bienvenu",
-    description: "Developpeur FullStack",
+    title: "DÉVELOPPEUR FULLSTACK - PROJET NODEJS",
+    description: "Réalisation d’application permettant la facilitation la proposition de prêts bancaires. Stacks : NodeJs, VueJs, RESETFUL API, ExpressJs, MongoDB",
     url: "https://github.com/mahf-TB",
   },
   {
     Logo: StickerIcon,
-    title: "Mahefa Bienvenu",
-    description: "Developpeur FullStack",
+    title: "DÉVELOPPEUR FULLSTACK - PROJET JAVA",
+    description: "Réalisation d’application de gestion des pensions des retraités. Stacks : Java, Netbeans, PostgreSQL",
     url: "https://github.com/mahf-TB",
   },
   {
     Logo: Rss,
-    title: "Mahefa Bienvenu",
-    description: "Developpeur FullStack",
+    title: "DÉVELOPPEUR FULLSTACK - PROJET C#",
+    description: "Réalisation d’application de gestion de vols aériens. Stacks : ASP.NET, C#, MySql",
     url: "https://github.com/mahf-TB",
   },
   {
     Logo: GalleryThumbnails,
-    title: "Mahefa Bienvenu",
-    description: "Developpeur FullStack",
+    title: "DÉVELOPPEMENT APPLICATION DESKTOP",
+    description: "Création d’une application desktop pour la gestion bancaire avec Qt en C++ et MySQL",
     url: "https://github.com/mahf-TB",
   },
   {
-    Logo: GalleryThumbnails,
-    title: "Mahefa Bienvenu",
-    description: "Developpeur FullStack",
+    Logo: SignpostIcon,
+    title: "DÉVELOPPEMENT D'UN SITE WEB",
+    description: "Création d’un site web statique pour la réservation de chambre d’hôtel avec HTML, CSS et Javascript",
     url: "https://github.com/mahf-TB",
   },
 ];
 
-type sideProjectProps = {
-  Logo: LucideIcon;
-  description: string;
-  title: string;
-  url: string;
-};
-
-const SideProject = (props: sideProjectProps) => {
-  return (
-    <Link
-      href={props.url}
-      className="inline-flex items-center gap-4 hover:bg-accent/50 hover:text-green4 group  transition-colors p-1 rounded-sm"
-    >
-      <span className="bg-accent text-accent-foreground p-4 rounded-sm">
-        <props.Logo className=" group-hover:text-green4" />
-      </span>
-      <div>
-        <p className="text-lg font-semibold">{props.title}</p>
-        <p className="text-sm text-muted-foreground">{props.description}</p>
-      </div>
-    </Link>
-  );
-};
-
-const WORKS: WorkProps[] = [
+const WORKS = [
   {
     image: "image/srspm.jpg",
     title: "Ministère de l'Economie et des Finances",
@@ -90,75 +73,6 @@ const WORKS: WorkProps[] = [
     date: "Mars - juin 2022 ",
   },
 ];
-
-type WorkProps = {
-  image: string;
-  role: string;
-  date: string;
-  title: string;
-  url: string;
-};
-
-const WorkProject = (props: WorkProps) => {
-  return (
-    <Link
-      href={props.url}
-      className="inline-flex items-center gap-4 hover:bg-accent/50 hover:text-green4 transition-colors p-1 rounded-sm"
-    >
-      <span className="bg-accent text-accent-foreground rounded-sm">
-        <img
-          src={props.image}
-          alt={props.title}
-          className="w-12 h-12 rounded-sm max-md:object-contain object-cover"
-        />
-      </span>
-      <div className="max-md:inline-flex items-center w-full">
-        <div>
-          <p className="text-sm font-semibold max-md:text-lg">{props.title}</p>
-          <p className="text-sm text-muted-foreground">{props.role}</p>
-        </div>
-        <div className="ml-auto">
-          <p className="text-sm text-muted-foreground">{props.date}</p>
-        </div>
-      </div>
-    </Link>
-  );
-};
-
-type ContactProps = {
-  image: string;
-  mediumImg: string;
-  name: string;
-  description: string;
-};
-
-const ContactCard = (props: ContactProps) => {
-  return (
-    <Card className="p-3 bg-accent/50 flex items-center gap-4 hover:text-green4 transition-colors  rounded-sm">
-      <span className="relative rounded-sm">
-        <img
-          src={props.image}
-          alt={props.name}
-          className="min-w-12 h-12 rounded-full max-md:object-contain object-cover"
-        />
-        <img
-          src={props.mediumImg}
-          alt={props.name}
-          className="w-5 h-5 absolute -bottom-2 right-0 rounded-full max-md:object-contain object-cover"
-        />
-      </span>
-      <div className="max-md:inline-flex items-center w-full">
-        <div>
-          <p className="text-sm font-semibold max-md:text-lg">{props.name}</p>
-          <p className="text-sm text-muted-foreground">{props.description}</p>
-        </div>
-      </div>
-      <div className="ml-auto">
-        <ArrowUpRight size={16} />
-      </div>
-    </Card>
-  );
-};
 
 export const Status = () => {
   return (
