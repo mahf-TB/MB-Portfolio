@@ -2,6 +2,7 @@ import { cn } from "@/lib/utils";
 import { Section } from "./Section";
 import { ComponentPropsWithoutRef } from "react";
 import { FbIcon } from "./icons/FbIcon";
+import Image from "next/image";
 
 export const Code = ({
   className,
@@ -31,18 +32,18 @@ export const Hero = () => {
           Developpeur FullStack
         </h3>
         <p className="text-foreground text-base my-3">
-          Étudiant en L3 - informatique à l'
+          Etudiant en L3 - informatique à l&apos;
           <Code className="inline-flex items-center gap-1 uppercase">
-            école nationale d'informatique{" "}
+            ecole nationale d&apos;informatique
           </Code>
           de Fianarantsoa Madagascar, parcours Génie Logiciel et Base de
           données. Déterminé, responsable, autonome et conscient du travail qui
-          m'attend.
+          m&apos;attend.
         </p>
       </div>
       <div className="w-1/3">
         <div className="w-[250px] h-[250px] mx-auto  max-md:w-56 max-md:h-56">
-          <img
+          <Image
             src="/image/mahefa.JPG"
             alt="Photo sur GitHub"
             className="w-full h-full rounded-full border-[5px] border-green4 object-cover"

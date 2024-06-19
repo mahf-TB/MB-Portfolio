@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 type WorkProps = {
@@ -15,7 +16,7 @@ export const WorkProject = (props: WorkProps) => {
       className="inline-flex items-center gap-4 hover:bg-accent/50 hover:text-green4 transition-colors p-1 rounded-sm"
     >
       <span className="bg-accent text-accent-foreground rounded-sm">
-        <img
+        <Image
           src={props.image}
           alt={props.title}
           className="w-12 h-12 rounded-sm max-md:object-contain object-cover"
