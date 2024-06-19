@@ -7,6 +7,7 @@ import {
   Code,
   GalleryThumbnails,
   HomeIcon,
+  PercentSquareIcon,
   Rss,
   SignpostIcon,
   StickerIcon,
@@ -14,46 +15,46 @@ import {
 
 const SIDE_PROJECTES = [
   {
-    Logo: HomeIcon,
+    Logo: PercentSquareIcon,
     title: "DÉVELOPPEUR FULLSTACK, STAGE",
     description: "Développement d’une application d’optimisation de la gestion de l’évolution de carrière des agents en leur permettant de suivre leur changement de grade.",
-    url: "https://github.com/mahf-TB",
+    url: "https://github.com/mahf-TB/VueLaravel-O-GECA",
   },
   {
     Logo: HomeIcon,
     title: "DÉVELOPPEUR BACKEND - PROJET IHM",
     description: "Réalisation d’une application de gestion de résidence universitaire. Stacks : Laravel 10, PHP, VueJs, MySql, Visual paradigm",
-    url: "https://github.com/mahf-TB",
+    url: "https://github.com/mahf-TB/webApp-Cite-universitaire",
   },
   {
     Logo: Code,
     title: "DÉVELOPPEUR FULLSTACK - PROJET NODEJS",
-    description: "Réalisation d’application permettant la facilitation la proposition de prêts bancaires. Stacks : NodeJs, VueJs, RESETFUL API, ExpressJs, MongoDB",
-    url: "https://github.com/mahf-TB",
+    description: "Réalisation d’application permettant la facilitation la proposition de prêts bancaires. Stacks : NodeJs, VueJs, APIs, ExpressJs, MongoDB",
+    url: "https://github.com/mahf-TB/?tab=repositories",
   },
   {
     Logo: StickerIcon,
     title: "DÉVELOPPEUR FULLSTACK - PROJET JAVA",
     description: "Réalisation d’application de gestion des pensions des retraités. Stacks : Java, Netbeans, PostgreSQL",
-    url: "https://github.com/mahf-TB",
+    url: "https://github.com/mahf-TB/?tab=repositories",
   },
   {
     Logo: Rss,
     title: "DÉVELOPPEUR FULLSTACK - PROJET C#",
     description: "Réalisation d’application de gestion de vols aériens. Stacks : ASP.NET, C#, MySql",
-    url: "https://github.com/mahf-TB",
+    url: "https://github.com/mahf-TB/?tab=repositories",
   },
   {
     Logo: GalleryThumbnails,
     title: "DÉVELOPPEMENT APPLICATION DESKTOP",
     description: "Création d’une application desktop pour la gestion bancaire avec Qt en C++ et MySQL",
-    url: "https://github.com/mahf-TB",
+    url: "https://github.com/mahf-TB/?tab=repositories",
   },
   {
     Logo: SignpostIcon,
     title: "DÉVELOPPEMENT D'UN SITE WEB",
     description: "Création d’un site web statique pour la réservation de chambre d’hôtel avec HTML, CSS et Javascript",
-    url: "https://github.com/mahf-TB",
+    url: "https://github.com/mahf-TB/Siteweb-statique",
   },
 ];
 
@@ -114,7 +115,6 @@ export const Status = () => {
           </Card>
           <Card className="p-4">
             <p className="text-lg text-muted-foreground pb-2">Contact me</p>
-            <div className="h-5" />
             <ContactCard
               mediumImg="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
               image="image/mahefa.JPG"
