@@ -1,5 +1,4 @@
 import { Card } from "@/components/ui/card";
-import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
 type ContactProps = {

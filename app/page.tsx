@@ -1,8 +1,6 @@
-import Image from "next/image";
 import { Header } from "./_component/Header";
 import { Hero } from "./_component/Hero";
 import { Status } from "./_component/Status";
-import { Menu } from "./_component/Menu";
 
 export default function Home() {
   return (
@@ -13,7 +11,6 @@ export default function Home() {
       <div className="h-[50px]"/>
       <Status />
       <div className="h-[50px]"/>
-      {/* <Menu /> */}
     </main>
   );
 }
