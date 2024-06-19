@@ -30,19 +30,19 @@ const SIDE_PROJECTES = [
     Logo: Code,
     title: "DÉVELOPPEUR FULLSTACK - PROJET NODEJS",
     description: "Réalisation d’application permettant la facilitation la proposition de prêts bancaires. Stacks : NodeJs, VueJs, APIs, ExpressJs, MongoDB",
-    url: "https://github.com/mahf-TB/?tab=repositories",
+    url: "https://github.com/mahf-TB/NodeJS-Vue-Projet-Vente",
   },
   {
     Logo: StickerIcon,
     title: "DÉVELOPPEUR FULLSTACK - PROJET JAVA",
     description: "Réalisation d’application de gestion des pensions des retraités. Stacks : Java, Netbeans, PostgreSQL",
-    url: "https://github.com/mahf-TB/?tab=repositories",
+    url: "https://github.com/mahf-TB?tab=repositories",
   },
   {
     Logo: Rss,
     title: "DÉVELOPPEUR FULLSTACK - PROJET C#",
     description: "Réalisation d’application de gestion de vols aériens. Stacks : ASP.NET, C#, MySql",
-    url: "https://github.com/mahf-TB/?tab=repositories",
+    url: "https://github.com/mahf-TB?tab=repositories",
   },
   {
     Logo: GalleryThumbnails,
