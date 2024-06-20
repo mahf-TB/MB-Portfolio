@@ -13,12 +13,14 @@ export const ContactCard = (props: ContactProps) => {
   return (
     <Card className="p-3 bg-accent/50 flex items-center gap-4 hover:text-green4 transition-colors  rounded-sm">
       <span className="relative rounded-sm">
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={props.image}
           alt={props.name}
           className="min-w-12 h-12 rounded-full max-md:object-contain object-cover"
         />
-        <Image
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
           src={props.mediumImg}
           alt=""
           className="w-5 h-5 absolute -bottom-2 right-0 rounded-full max-md:object-contain object-cover"

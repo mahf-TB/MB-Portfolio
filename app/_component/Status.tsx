@@ -39,18 +39,6 @@ const SIDE_PROJECTES = [
     url: "https://github.com/mahf-TB?tab=repositories",
   },
   {
-    Logo: Rss,
-    title: "DÉVELOPPEUR FULLSTACK - PROJET C#",
-    description: "Réalisation d’application de gestion de vols aériens. Stacks : ASP.NET, C#, MySql",
-    url: "https://github.com/mahf-TB?tab=repositories",
-  },
-  {
-    Logo: GalleryThumbnails,
-    title: "DÉVELOPPEMENT APPLICATION DESKTOP",
-    description: "Création d’une application desktop pour la gestion bancaire avec Qt en C++ et MySQL",
-    url: "https://github.com/mahf-TB/?tab=repositories",
-  },
-  {
     Logo: SignpostIcon,
     title: "DÉVELOPPEMENT D'UN SITE WEB",
     description: "Création d’un site web statique pour la réservation de chambre d’hôtel avec HTML, CSS et Javascript",
@@ -60,14 +48,14 @@ const SIDE_PROJECTES = [
 
 const WORKS = [
   {
-    image: "image/srspm.jpg",
+    image: "/image/srspm.jpg",
     title: "Ministère de l'Economie et des Finances",
     role: "Developpeur FullStack",
     url: "https://github.com/mahf-TB",
     date: "Août 2023 - Fev 2024",
   },
   {
-    image: "image/images.png",
+    image: "/image/images.png",
     title: "MNDPT | Fianarantsoa",
     role: "Developpeur Frontend",
     url: "https://github.com/mahf-TB",
@@ -117,14 +105,14 @@ export const Status = () => {
             <p className="text-lg text-muted-foreground pb-2">Contact me</p>
             <ContactCard
               mediumImg="https://upload.wikimedia.org/wikipedia/commons/c/cd/Facebook_logo_%28square%29.png"
-              image="image/mahefa.JPG"
+              image="/image/mahefa.JPG"
               name="Mahefa Bienvenu"
-              description="Couple goal 2024"
+              description="+261 33 17 189 39"
             />
             <div className="h-5" />
             <ContactCard
               mediumImg="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/800px-Instagram_icon.png"
-              image="image/mahefa.JPG"
+              image="/image/mahefa.JPG"
               name="@mahefa.bien"
               description="Sur intagram"
             />

@@ -33,7 +33,7 @@ export const Hero = () => {
         </h3>
         <p className="text-foreground text-base my-3">
           Etudiant en L3 - informatique à l&apos;
-          <Code className="inline-flex items-center gap-1 uppercase">
+          <Code className="inline-flex items-center text-xs gap-1 uppercase">
             ecole nationale d&apos;informatique
           </Code>
           de Fianarantsoa Madagascar, parcours Génie Logiciel et Base de
@@ -43,7 +43,8 @@ export const Hero = () => {
       </div>
       <div className="w-1/3">
         <div className="w-[250px] h-[250px] mx-auto  max-md:w-56 max-md:h-56">
-          <Image
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
             src="/image/mahefa.JPG"
             alt="Photo sur GitHub"
             className="w-full h-full rounded-full border-[5px] border-green4 object-cover"
