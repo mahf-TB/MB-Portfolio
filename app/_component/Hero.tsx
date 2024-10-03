@@ -12,7 +12,7 @@ export const Code = ({
     <>
       <span
         className={cn(
-          "bg-accent/30 border border-accent p-1 mx-1 font-mono rounded-sm",
+          "bg-accent/50 border border-accent p-1 mx-1 font-mono rounded-sm",
           className
         )}
         {...props}
@@ -23,31 +23,28 @@ export const Code = ({
 
 export const Hero = () => {
   return (
-    <Section ClassName="flex items-start gap-4 max-md:px-10 max-md:flex-col-reverse">
-      <div className="flex flex-col w-2/3 max-md:w-full">
-        <h2 className=" font-maven text-5xl font-bold text-primary">
-          Mahefa Bienvenu
+    <Section ClassName=" relative flex items-start justify-center gap-4 max-md:px-10 max-md:flex-row-reverse">
+      <div className="flex flex-col gap-2 w-2/4 max-md:w-full">
+        <h2 className="font-maven text-5xl ml-5 max-md:text-2xl font-bold text-primary">
+          I'm Mahefa Bienvenu
         </h2>
-        <h3 className="text-2xl font-maven text-green4 mb-3 ">
-          Developpeur FullStack
-        </h3>
-        <p className="text-foreground text-base my-3">
-          Etudiant en L3 - informatique à l&apos;
-          <Code className="inline-flex items-center text-xs gap-1 uppercase">
-            ecole nationale d&apos;informatique
+        <span className="text-green4 ml-5">Full-Stack Developer</span>
+        <span className="ml-5 max-md:mt-0 mt-10 py-2">
+          Currently, I'm a Developer at{" "}
+          <Code className="text-yellow-300 ">
+            OnirTech
           </Code>
-          de Fianarantsoa Madagascar, parcours Génie Logiciel et Base de
-          données. Déterminé, responsable, autonome et conscient du travail qui
-          m&apos;attend.
-        </p>
+        </span>
+        <span className="ml-5">Specialized in Frontend development with<Code className="text-xs">NextJs</Code> and full-stack projects using the<Code className="text-xs">MERN</Code></span>
       </div>
-      <div className="w-1/3">
-        <div className="w-[250px] h-[250px] mx-auto  max-md:w-56 max-md:h-56">
+      <div className="w-1/3 relative">
+        <div className="-z-50 bg-green4 max-md:w-[100px] w-[200px] h-[100px] absolute top-10 max-md:bottom-14 max-md:right-0 right-5 rounded-full -translate-x-1/2 translate-y-6 blur-[90px]"></div>
+        <div className=" w-[250px] h-[250px] max-md:mx-auto mx-auto  max-md:w-56 max-md:h-56">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/image/mahefa.JPG"
+            src="/image/user.png"
             alt="Photo sur GitHub"
-            className="w-full h-full rounded-full border-[5px] border-green4 object-cover"
+            className="w-full h-full shadow-green4 rounded-t-full object-cover"
           />
         </div>
       </div>
