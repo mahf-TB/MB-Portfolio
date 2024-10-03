@@ -18,7 +18,7 @@ export const Skills = () => {
           </div>
           <h3 className="mb-2 text-2xl font-semibold tracking-tight">React Js</h3>
           <p className="text-muted-foreground">
-          I am an "expert" in React libarary and I can create whatever you want wit this.
+          I am an &quot;expert&quot; in React libarary and I can create whatever you want wit this.
           </p>
         </div>
         <div>
@@ -27,7 +27,7 @@ export const Skills = () => {
           </div>
           <h3 className="mb-2 text-2xl font-semibold tracking-tight">Tailwind css</h3>
           <p className="text-muted-foreground">
-          Since 2023, I start using TailwindCSS and I think it's the best tool for CSS.
+          Since 2023, I start using TailwindCSS and I think it&apos;s the best tool for CSS.
           </p>
         </div>
         <div>

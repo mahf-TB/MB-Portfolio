@@ -26,11 +26,11 @@ export const Hero = () => {
     <Section ClassName=" relative flex items-start justify-center gap-4 max-md:px-10 max-md:flex-row-reverse">
       <div className="flex flex-col gap-2 w-2/4 max-md:w-full">
         <h2 className="font-maven text-5xl ml-5 max-md:text-2xl font-bold text-primary">
-          I'm Mahefa Bienvenu
+          I&apos;m Mahefa Bienvenu
         </h2>
         <span className="text-green4 ml-5">Full-Stack Developer</span>
         <span className="ml-5 max-md:mt-0 mt-10 py-2">
-          Currently, I'm a Developer at{" "}
+          Currently, I&apos;m a Developer at{" "}
           <Code className="text-yellow-300 ">
             OnirTech
           </Code>
