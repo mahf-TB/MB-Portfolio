@@ -15,7 +15,7 @@ export const Header = () => {
         <h1 className="text-lg font-JetBrains text-white">
             <LogoBien />
         </h1>
-        <div className="flex-1"> </div>
+        <div className="flex-1"></div>
         <ul className="flex items-center gap-2">
           <Link
             href="https://github.com/mahf-TB"

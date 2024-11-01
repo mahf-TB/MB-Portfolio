@@ -17,31 +17,36 @@ const SIDE_PROJECTES = [
   {
     Logo: PercentSquareIcon,
     title: "DÉVELOPPEUR FULLSTACK, STAGE",
-    description: "Développement d’une application d’optimisation de la gestion de l’évolution de carrière des agents en leur permettant de suivre leur changement de grade.",
+    description:
+      "Développement d’une application d’optimisation de la gestion de l’évolution de carrière des agents en leur permettant de suivre leur changement de grade.",
     url: "https://github.com/mahf-TB/VueLaravel-O-GECA",
   },
   {
     Logo: HomeIcon,
     title: "DÉVELOPPEUR BACKEND - PROJET IHM",
-    description: "Réalisation d’une application de gestion de résidence universitaire. Stacks : Laravel 10, PHP, VueJs, MySql, Visual paradigm",
+    description:
+      "Réalisation d’une application de gestion de résidence universitaire. Stacks : Laravel 10, PHP, VueJs, MySql, Visual paradigm",
     url: "https://github.com/mahf-TB/webApp-Cite-universitaire",
   },
   {
     Logo: Code,
     title: "DÉVELOPPEUR FULLSTACK - PROJET NODEJS",
-    description: "Réalisation d’application permettant la facilitation la proposition de prêts bancaires. Stacks : NodeJs, VueJs, APIs, ExpressJs, MongoDB",
+    description:
+      "Réalisation d’application permettant la facilitation la proposition de prêts bancaires. Stacks : NodeJs, VueJs, APIs, ExpressJs, MongoDB",
     url: "https://github.com/mahf-TB/NodeJS-Vue-Projet-Vente",
   },
   {
     Logo: StickerIcon,
     title: "DÉVELOPPEUR FULLSTACK - PROJET JAVA",
-    description: "Réalisation d’application de gestion des pensions des retraités. Stacks : Java, Netbeans, PostgreSQL",
+    description:
+      "Réalisation d’application de gestion des pensions des retraités. Stacks : Java, Netbeans, PostgreSQL",
     url: "https://github.com/mahf-TB?tab=repositories",
   },
   {
     Logo: SignpostIcon,
     title: "DÉVELOPPEMENT D'UN SITE WEB",
-    description: "Création d’un site web statique pour la réservation de chambre d’hôtel avec HTML, CSS et Javascript",
+    description:
+      "Création d’un site web statique pour la réservation de chambre d’hôtel avec HTML, CSS et Javascript",
     url: "https://github.com/mahf-TB/Siteweb-statique",
   },
 ];
@@ -72,7 +77,8 @@ export const Status = () => {
             Side, fun projects.
           </p>
           <div className="flex flex-col gap-4">
-            {SIDE_PROJECTES.map((project, index) => (
+            {
+            SIDE_PROJECTES.map((project, index) => (
               <SideProject
                 key={index}
                 Logo={project.Logo}
