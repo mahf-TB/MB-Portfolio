@@ -1,9 +1,10 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { Header } from "./_components/Header";
-import { Hero } from "./_components/Hero";
-import { Status } from "./_components/Status";
-import { Skills } from "./_components/Skills";
-import Work from "./_components/Work";
+import { Header } from "./_component/Header";
+import { Hero } from "./_component/Hero";
+import { Status } from "./_component/Status";
+import { Skills } from "./_component/Skills";
+import Projects from "./_component/Projects";
+
 
 export default function Home() {
   return (
@@ -12,11 +13,11 @@ export default function Home() {
       <div className="h-[50px]" />
       <Hero />
       <div className="h-[50px]" />
-      <Work />
+      <Projects />
       <div className="h-[50px]" />
-      <Status />
+      {/* <Status />
       <div className="h-[50px]" />
-      <Skills />
+      <Skills /> */}
       <div className="h-[50px]" />
       <div className="h-[50px]" />
     </main>

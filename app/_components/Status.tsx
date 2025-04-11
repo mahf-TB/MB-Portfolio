@@ -53,14 +53,14 @@ const SIDE_PROJECTES = [
 
 const WORKS = [
   {
-    image: "/image/srspm.jpg",
+    image: "/images/srspm.jpg",
     title: "Ministère de l'Economie et des Finances",
     role: "Developpeur FullStack",
     url: "https://github.com/mahf-TB",
     date: "Août 2023 - Fev 2024",
   },
   {
-    image: "/image/images.png",
+    image: "/images/images.png",
     title: "MNDPT | Fianarantsoa",
     role: "Developpeur Frontend",
     url: "https://github.com/mahf-TB",
