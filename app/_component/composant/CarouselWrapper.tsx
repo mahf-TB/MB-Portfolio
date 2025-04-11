@@ -1,3 +1,4 @@
+'use client';
 import { ReactNode } from "react";
 import {
   Carousel,
@@ -29,5 +30,20 @@ export function CarouselWrapper({
       <CarouselPrevious className="max-lg:ml-5" />
       <CarouselNext className="max-lg:mr-5"/>
     </Carousel>
+  );
+}
+
+
+export function CarouselItemWrapper({
+  children,
+  className,
+}: {
+  children: ReactNode;
+  className?: string;
+}) {
+  return (
+    <CarouselItem className={className}>
+      {children}
+    </CarouselItem>
   );
 }

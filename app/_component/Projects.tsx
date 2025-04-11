@@ -1,13 +1,11 @@
-import React, { JSX } from "react";
+'use client';
+import React from "react";
 import { Section } from "./Section";
 import { Card, CardContent } from "@/components/ui/card";
-import { CarouselItem } from "@/components/ui/carousel";
-import { CarouselWrapper } from "./composant/CarouselWrapper";
+import { CarouselItemWrapper , CarouselWrapper } from "./composant/CarouselWrapper";
 import Image from "next/image";
 import { Code } from "./Hero";
 import { SIDE_PROJECTES } from "@/data/projectsData";
-
-
 
 const Projects = () => {
   return (
@@ -33,8 +31,7 @@ export const CarouselSize: React.FC = () => {
   return (
     <CarouselWrapper align="center" className="w-full">
       {SIDE_PROJECTES.map((item, index) => (
-        <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3 ">
-          {/* xl:basis-1/4 */}
+        <CarouselItemWrapper key={index} className="md:basis-1/2 lg:basis-1/3 ">
           <div className="p-1">
             <Card className="p-5">
               <CardContent className="flex items-start gap-4 flex-col p-0 h-56">
@@ -61,7 +58,6 @@ export const CarouselSize: React.FC = () => {
                     </span>
                   </div>
                 </div>
-
                 <div className="">
                   <span className="text-sm text-gray-400">
                     {item.description}
@@ -83,7 +79,7 @@ export const CarouselSize: React.FC = () => {
               </CardContent>
             </Card>
           </div>
-        </CarouselItem>
+        </CarouselItemWrapper>
       ))}
     </CarouselWrapper>
   );
