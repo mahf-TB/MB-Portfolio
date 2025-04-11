@@ -1,7 +1,9 @@
+import { motion, AnimatePresence } from "framer-motion";
 import { Header } from "./_components/Header";
 import { Hero } from "./_components/Hero";
+import { Status } from "./_components/Status";
+import { Skills } from "./_components/Skills";
 import Projects from "./_components/Projects";
-
 
 
 export default function Home() {
