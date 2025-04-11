@@ -3,6 +3,8 @@ import { Header } from "./_component/Header";
 import { Hero } from "./_component/Hero";
 import { Status } from "./_component/Status";
 import { Skills } from "./_component/Skills";
+import Projects from "./_component/Projects";
+
 
 export default function Home() {
   return (
@@ -11,9 +13,11 @@ export default function Home() {
       <div className="h-[50px]" />
       <Hero />
       <div className="h-[50px]" />
-      <Status />
+      <Projects />
       <div className="h-[50px]" />
-      <Skills />
+      {/* <Status />
+      <div className="h-[50px]" />
+      <Skills /> */}
       <div className="h-[50px]" />
       <div className="h-[50px]" />
     </main>

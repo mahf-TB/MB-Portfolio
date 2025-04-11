@@ -10,8 +10,8 @@ import LogoBien from "./Logo/LogoBien";
 
 export const Header = () => {
   return (
-    <header className="z-50 sticky top-0 py-4 bg-background/70">
-      <Section ClassName="flex items-baseline ">
+    <header className="z-50 sticky top-0 py-3  bg-foreground/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+      <Section ClassName="flex items-center ">
         <h1 className="text-lg font-JetBrains text-white">
             <LogoBien />
         </h1>
