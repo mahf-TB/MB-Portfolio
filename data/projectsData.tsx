@@ -1,5 +1,5 @@
-import { LaravelLogo } from "@/app/_component/icons/LaravelLogo";
-import { ReactLogo } from "@/app/_component/icons/ReactLogo";
+import { LaravelLogo } from "@/app/_components/icons/LaravelLogo";
+import { ReactLogo } from "@/app/_components/icons/ReactLogo";
 import {
   Code,
   HomeIcon,
